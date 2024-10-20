@@ -3,9 +3,9 @@ const display = document.querySelector('.display');
 
 function displayWav(labelNum, wavNum){
   if(wavNum == 0) {
-    display.insertAdjacentHTML('beforeend', `<h3 id="${labelNum}">音声${labelNum}</h3><audio controls src="./test.wav"></audio>`);
+    display.insertAdjacentHTML('beforeend', `<h3 id="id${labelNum}">音声${labelNum}</h3><audio controls src="./test.wav"></audio>`);
   } else {
-    display.insertAdjacentHTML('beforeend', `<h3 id="${labelNum}">音声${labelNum}</h3><audio controls src="./test (${wavNum}).wav"></audio>`);
+    display.insertAdjacentHTML('beforeend', `<h3 id="id${labelNum}">音声${labelNum}</h3><audio controls src="./test (${wavNum}).wav"></audio>`);
   }
 }
 let labelNum = 0;
